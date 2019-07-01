@@ -3029,7 +3029,7 @@
           width: 230px;
       }
       #description_start p {
-          border: 0px solid #FF0000;
+          border: 0px solid #FFFFFF;
           color: #333333;
           font: 1em arial;
           margin: 0px;
@@ -4013,6 +4013,25 @@
      font-size: 2.167em;
   }
   
+  .simple_text {
+    color:"white"
+  }
+
+  #test1 {color: #FFFFFF}
+  #test2 {color: #FFFFFF}
+  #test3 {color: #FFFFFF}
+  #test4 {color: #FFFFFF}
+  #test5 {color: #FFFFFF}
+  #test6 {color: #FFFFFF}
+  #test7 {color: #FFFFFF}
+  #library_text {color: #FFFFFF}
+  #publications_text {color: #FFFFFF}
+  #home_text {color: #FFFFFF}
+  #world_factbook_text {color: #FFFFFF}
+  #FAQ_text {color:#FFFFFF}
+
+
+
   /* RTL languages */
   .section-ar #content h1,
   .section-ar #content-core h2,

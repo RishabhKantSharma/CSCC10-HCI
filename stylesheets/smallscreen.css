@@ -1424,6 +1424,24 @@
    overflow:hidden;
    padding:11px 10px 11px 17px;
  }*/
+
+ .simple_text {
+   color:"white"
+ }
+
+  #test1 {color: #FFFFFF}
+  #test2 {color: #FFFFFF}
+  #test3 {color: #FFFFFF}
+  #test4 {color: #FFFFFF}
+  #test5 {color: #FFFFFF}
+  #test6 {color: #FFFFFF}
+  #test7 {color: #FFFFFF}
+  #library_text {color: #FFFFFF}
+  #publications_text {color: #FFFFFF}
+  #home_text {color: #FFFFFF}
+  #world_factbook_text {color: #FFFFFF}
+  #FAQ_text {color:#FFFFFF}
+
  .download-panel .heading-block .select-publication{
    float:none;
    color:#000;
@@ -2597,7 +2615,7 @@
      width:178px; height:26px; 
      margin: 0px 0px 8px 0px;
      padding:0;
-     background-color:#FF0000;
+     background-color:#FFFFFF;
      background:#631818 url(../images/rtNavItemBGKids.gif) no-repeat top left;
  }
  
