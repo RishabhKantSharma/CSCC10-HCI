@@ -1,3 +1,22 @@
+/* Additional header and subtitle style */
+.map_region {
+  font-family:  'Glyphicons Halflings';
+  font-size: 40px;
+  color: #1e3762;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #ccc;
+}
+
+.map_field {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1e1e;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+
 /* Google GeoChart style */
 .google-visualization-tooltip {
   border:none !important;
