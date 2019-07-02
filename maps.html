@@ -1513,6 +1513,13 @@
         <div class="map-title" style='margin-top:10px'>AVAILABLE<br>CIA MAPS</div>
       </a>
     </div>
+    <div class="map_region">
+      <h1>Western Europe</h3>
+    </div>
+    <div class="map_field">
+      <h3>Population</h3>
+    </div>
+
     <div class='refmap region'>
       <div class="map-image">
             <script type='text/javascript'>
@@ -1550,7 +1557,22 @@
                  };
            
                  var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+                 google.visualization.events.addListener(chart, 'select', clickHandler);
                  chart.draw(data, options);
+
+                 function clickHandler() {
+                   var selection = chart.getSelection();
+                   if (selection.length > 0) {
+                    var country = data.getValue(selection[0].row, 0);
+                    
+                    
+                    if (country == 'France'){
+                      window.open("https://www.google.ca", '_blank');
+                    }
+
+                   }
+                 }
+                 
                };
                </script>
              </head>
