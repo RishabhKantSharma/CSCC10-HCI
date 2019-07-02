@@ -1532,6 +1532,9 @@
                 google.charts.setOnLoadCallback(drawMarkersMap);
            
                  function drawMarkersMap() {
+                
+                 var country_links = {'France':'https://www.google.ca'};
+           
                  var data = google.visualization.arrayToDataTable([
                    ['Country',   'Population'],
                    ['France',  35],
@@ -1564,12 +1567,7 @@
                    var selection = chart.getSelection();
                    if (selection.length > 0) {
                     var country = data.getValue(selection[0].row, 0);
-                    
-                    
-                    if (country == 'France'){
-                      window.open("https://www.google.ca", '_blank');
-                    }
-
+                    window.open(country_links[country], '_blank');
                    }
                  }
                  
