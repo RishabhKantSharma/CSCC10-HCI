@@ -1,3 +1,75 @@
+/* Additional header and subtitle style */
+.map_region {
+  font-family:  'Glyphicons Halflings';
+  font-size: 40px;
+  color: #1e3762;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #ccc;
+}
+
+.map_field {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1e1e;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+
+/* Map navigation button style */
+
+.map_nav {
+  display: flex;
+  direction: column;
+  margin: 20px;
+}
+
+.map_nav a {
+  padding: 10px 10px 10px 10px;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  background-color: #dbd8d1;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.map_nav a :visited {
+  text-decoration: none;
+}
+
+.map_btn :hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.map_btn :active {
+  background-color: #cccccc;
+  color: black;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+#curr_map a {
+  color: #1e3762 !important;
+  background-color: white;
+  cursor: context-menu;
+}
+
+/* Google GeoChart style */
+.google-visualization-tooltip {
+  border:none !important;
+  background-color: #000000 !important;
+  color: white !important;
+  opacity: 0.8;
+}
+
+/* Original style sheet*/
 .wfb-text-box {
     clear: both;
  }
@@ -8,7 +80,7 @@
  
  .wfb-text-box .fb_title {
     height: 21px;
-    background-image: url(../images/welcome_background.png);
+    background-image: url(images/welcome_background.png);
     background-repeat: repeat-x;
  }
  /*
@@ -42,7 +114,7 @@
  
  .wn-title-wrap {
    background-color: #dbe4ed;
-   background-image: url("../images/home_header_bkg.jpg");
+   background-image: url("images/home_header_bkg.jpg");
    background-repeat: repeat-x;
  }
  
@@ -438,7 +510,7 @@
  
  .flag-location {
      height: 195px;
-     background-image: url("../images/sas_lgmap_bkgrnd.jpg");
+     background-image: url("images/sas_lgmap_bkgrnd.jpg");
      background-position: center top;
      background-repeat: repeat-x;
      border: 1px solid #ccc;
@@ -449,7 +521,7 @@
  
  .photo_bkgrnd_static {
     height: 140px;
-      background-image: url(../images/photo_bkgrnd_static.gif);
+      background-image: url(images/photo_bkgrnd_static.gif);
       background-repeat: repeat-x;
       background-position: bottom left;
       margin-top: 2px;
@@ -547,7 +619,7 @@
  
  .map-holder {
    border: 1px solid #E4D4D4;
-   background-image: url("../images/sas_lgmap_bkgrnd.jpg");
+   background-image: url("images/sas_lgmap_bkgrnd.jpg");
    height: 336px;
    width: 440px;
    width: 100%;
@@ -557,7 +629,7 @@
  
  .map-holder-full {
    border: 1px solid #E4D4D4;
-   background-image: url("../images/sas_lgmap_bkgrnd.jpg");
+   background-image: url("images/sas_lgmap_bkgrnd.jpg");
    height: 336px;
    width: 323px;
    width: 100%;
@@ -569,7 +641,7 @@
  
  .modal-map-holder {
    border: 1px solid #E4D4D4;
-   background-image: url("../images/sas_lgmap_bkgrnd.jpg");
+   background-image: url("images/sas_lgmap_bkgrnd.jpg");
    height: 336px;
    height: 353px;
    width: 440px;
@@ -668,7 +740,7 @@
  }
  
  .fbTitleRankOrder {
-     background: rgba(0, 0, 0, 0) url("../images/gold_gradiant.gif") repeat scroll 0 0;
+     background: rgba(0, 0, 0, 0) url("images/gold_gradiant.gif") repeat scroll 0 0;
      color: #666666;
      font-size: 12px;
      height: 25px;
@@ -792,7 +864,7 @@
  }
  
  #cntrySelect {
-     background-image: url("../images/country_gradiant_back.jpg");
+     background-image: url("images/country_gradiant_back.jpg");
      background-position: center top;
      background-repeat: repeat-x;
      padding-top: 5px;
@@ -853,7 +925,7 @@
  #wfbNav li a
          {       display: block;
                  /*background: #324143;*/
-                 background: url(../images/navback.gif);
+                 background: url(images/navback.gif);
                  background-position: top right;
            background-repeat: no-repeat;
                  padding: 5px 8px;
@@ -867,7 +939,7 @@
  
  #wfbNav li a:hover
          {       /*background: #24313C;*/
-              background: url(../images/navback_hover.gif);
+              background: url(images/navback_hover.gif);
                  background-position: top right;
            background-repeat: no-repeat;
            }
@@ -1029,7 +1101,7 @@
      color:#fff;
  }
  /*** Header Area ***/
- .header-panel{background:url(../images/bg-header-holder2.jpg) no-repeat -100px -3px;}
+ .header-panel{background:url(images/bg-header-holder2.jpg) no-repeat -100px -3px;}
  
  .logo {margin:0;width:50%;float:left;padding:10px 0 10px 4%;}
  .logo img {max-width: 100%; max-height:90px;}
@@ -1040,7 +1112,7 @@
  .search-form > div:first-child{
      float:right;
      width:38%;
-     background:url(../images/mobileheaddivider.png) no-repeat center left;
+     background:url(images/mobileheaddivider.png) no-repeat center left;
      padding-left:4%; 
  }
  .search-form div:first-child + div {clear:both;}
@@ -1158,20 +1230,20 @@
      background-repeat:no-repeat;
      text-indent: 100%; white-space: nowrap; overflow: hidden;
  }	
- #search-menu-link span{background-image:url(../images/magnifying-glass-search.png);}
- #jobcart-link span{background-image:url(../images/cart-btn.png); background-position:center right;}
- #mobile-menu-link span{background-image:url(../images/menubtn.png);}
- #mobile-menu-link.active span{background-image:url(../images/menubtn-active.png);}
+ #search-menu-link span{background-image:url(images/magnifying-glass-search.png);}
+ #jobcart-link span{background-image:url(images/cart-btn.png); background-position:center right;}
+ #mobile-menu-link span{background-image:url(images/menubtn.png);}
+ #mobile-menu-link.active span{background-image:url(images/menubtn-active.png);}
  #languages-link span{
      /* We need to talk to the webmaster about finding this file. */
-     /*background:url(../images/languagesbtn.png) right top;*/
+     /*background:url(images/languagesbtn.png) right top;*/
      text-indent:14%;
      line-height:3.8;
      color:#fff;
      font-weight:bold;
  }
  /* We need to talk to the webmaster about finding this file. */
- /*#languages-link.active span{background-image:url(../images/languagesbtn-active.png);}*/
+ /*#languages-link.active span{background-image:url(images/languagesbtn-active.png);}*/
  
  /*** Search Form ***/
  #ciaSearchForm{display:none;clear:both;}
@@ -1209,7 +1281,7 @@
  
  /*** Mobile Footer ***/
  .top-return{clear:both;display:block;padding:20px;text-align:center;}
- .top-return span{padding-left:12px;background:url(../images/uparrow.png) no-repeat center left;}
+ .top-return span{padding-left:12px;background:url(images/uparrow.png) no-repeat center left;}
  /* added clear:both; to fix qa141: Meet the K-9s */
  div.documentByLine{padding:1em; clear:both;}
  
@@ -1276,7 +1348,7 @@
    height:100%; 
    width:32px;
    position:absolute;right:0;top:0;
-   background: url(../images/view-btn-arrow3.png) no-repeat left center;
+   background: url(images/view-btn-arrow3.png) no-repeat left center;
    -webkit-border-top-right-radius: 8px;
    -webkit-border-bottom-right-radius: 8px;
    -moz-border-radius-topright: 8px;
@@ -1332,7 +1404,7 @@
  }
  .content-box ul li a:hover,
  .content-box ul li .active{
-   background:url(../images/arrow-6.gif) no-repeat 0 3px;
+   background:url(images/arrow-6.gif) no-repeat 0 3px;
  }
  .content-box ul li .active{
    font-weight:bold;
@@ -1424,6 +1496,36 @@
    overflow:hidden;
    padding:11px 10px 11px 17px;
  }*/
+
+ .simple_text {
+   color:"white"
+ }
+
+  /* #test1 {color: #FFFFFF}
+  #test2 {color: #FFFFFF}
+  #test3 {color: #FFFFFF}
+  #test4 {color: #FFFFFF}
+  #test5 {color: #FFFFFF}
+  #test6 {color: #FFFFFF}
+  #test7 {color: #FFFFFF}
+  #library_text {color: #FFFFFF}
+  #publications_text {color: #FFFFFF}
+  #home_text {color: #FFFFFF}
+  #world_factbook_text {color: #FFFFFF}
+  #FAQ_text {color:#FFFFFF} */
+
+  .reference_content {
+    background-color: whitesmoke;
+  }
+
+  /* .sidebar-nav {
+    background-color : #455D87;
+  } */
+
+  #main {
+    background-color: white;
+  }
+
  .download-panel .heading-block .select-publication{
    float:none;
    color:#000;
@@ -1448,7 +1550,7 @@
  
  @media only screen and (min-width: 540px) {
      .museum-btn{
-         background: url('../images/museumBtn.jpg') no-repeat 0 0 transparent;
+         background: url('images/museumBtn.jpg') no-repeat 0 0 transparent;
          width: 500px;
          height: 252px;
          margin: 0 auto;
@@ -1480,7 +1582,7 @@
  }
  
  ul.rssAggFolderList li {
-     background: url("../images/icon_rss.gif") no-repeat scroll 0 2px / 16px auto transparent;
+     background: url("images/icon_rss.gif") no-repeat scroll 0 2px / 16px auto transparent;
      margin-bottom: 0.5em;
  }
  
@@ -1631,7 +1733,7 @@
  
  .slider li a .plus,
  .expandcollapse li a .plus{
-   background:url(../images/bg-plus.gif) no-repeat;
+   background:url(images/bg-plus.gif) no-repeat;
    position:absolute;
    right:8px;
    top:9px;
@@ -1640,7 +1742,7 @@
  }
  .slider li a.opener .plus,
  .expandcollapse li a.opener .plus{
-     background:url(../images/bg-plus.gif) no-repeat 0 -70px;
+     background:url(images/bg-plus.gif) no-repeat 0 -70px;
  }
  .slider li a:hover,
  .expandcollapse li a:hover{
@@ -1669,7 +1771,7 @@
    clear:both;
  }
  .gallery-panel{
-   background:#dddbd4 url(../images/bg-gallery.jpg) no-repeat 0 0;
+   background:#dddbd4 url(images/bg-gallery.jpg) no-repeat 0 0;
    padding:11px 0 15px;
    width:974px;
  }
@@ -1701,7 +1803,7 @@
    font-size:0.917em;
    text-transform:uppercase;
    padding:0 20px 0 0;
-   background:url(../images/ico-01.png) no-repeat 100% 0;  
+   background:url(images/ico-01.png) no-repeat 100% 0;  
    display:inline-block;
    *display: inline; *zoom: 1; /* IE7*/
    margin:0 0 17px;
@@ -1727,7 +1829,7 @@
  .gallery .read-box span{
    padding:0 28px 0 0;
    color:#fff;
-   background:url(../images/arrow-3.png) no-repeat 100% 16px;
+   background:url(images/arrow-3.png) no-repeat 100% 16px;
    float:left;
    font-weight:bold;
  }
@@ -1748,7 +1850,7 @@
  }
  .rssLink{float:right; margin: 0 1em 0 0;}
  .rssLink a {
-     background: url("../images/icon_rss.gif") no-repeat scroll left top transparent;
+     background: url("images/icon_rss.gif") no-repeat scroll left top transparent;
      display: block;
      margin: 0.4em 0 0;
      padding-left: 20px;
@@ -1913,7 +2015,7 @@
  /* end  */
  /** Maps page **/
  .cia-maps{
-   background:url(../images/ciamapbg-small.jpg) no-repeat top center;
+   background:url(images/ciamapbg-small.jpg) no-repeat top center;
    border:1px solid #999;
    min-height:416px;
    margin-bottom:20px;
@@ -1944,7 +2046,7 @@
      padding:1em 34px 1em 1em;
      border: 1px solid #2C4879;
      text-transform: uppercase;
-     background:#112242 url(../images/arrow-3.png) no-repeat 92% center;
+     background:#112242 url(images/arrow-3.png) no-repeat 92% center;
      color:#fff;
      font-weight:bold;
      display:inline-block;
@@ -1985,31 +2087,31 @@
          text-transform: uppercase;
      }
      .btns li a:hover span, .btns li a:focus span{text-decoration:underline;}
-     .btns li.job-fit a{background: url("../images/jobfit_bg.png") no-repeat scroll center -30px #1a3057}
-     .btns li.view-ads a{background: url("../images/view-ads-bg.png") no-repeat scroll center -10px #1a3057}
+     .btns li.job-fit a{background: url("images/jobfit_bg.png") no-repeat scroll center -30px #1a3057}
+     .btns li.view-ads a{background: url("images/view-ads-bg.png") no-repeat scroll center -10px #1a3057}
      
      .btns li.arial{clear:both;}
-     .btns li.arial a{background: url("../images/aerial-analysis-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.photo a{background: url("../images/photo-analysis-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.myths a{background: url("../images/myths-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.world-ex a{background: url("../images/world-ex-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.vid-center a{background: url("../images/video-center-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.hq a{background: url("../images/hq-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.museum-tour a{background: url("../images/museum-btn.jpg") no-repeat 0 0 transparent;}
-     .btns li.kryptos a{background: url("../images/kryptos-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.arial a{background: url("images/aerial-analysis-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.photo a{background: url("images/photo-analysis-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.myths a{background: url("images/myths-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.world-ex a{background: url("images/world-ex-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.vid-center a{background: url("images/video-center-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.hq a{background: url("images/hq-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.museum-tour a{background: url("images/museum-btn.jpg") no-repeat 0 0 transparent;}
+     .btns li.kryptos a{background: url("images/kryptos-btn.jpg") no-repeat 0 0 transparent;}
      .btns li a span{
          position: absolute; 
          bottom: 0;
-         background: url("../images/view-btn-arrow2.png") no-repeat scroll right 3px rgba(0, 0, 0, 0);
+         background: url("images/view-btn-arrow2.png") no-repeat scroll right 3px rgba(0, 0, 0, 0);
          padding: 0 20px 10px 10px;
      }
      .btns li.arial a span, .btns li.photo a span, .btns li.world-ex a span{
          padding: 0 5px 2px 10px;
-         background: url("../images/view-btn-arrow2.png") no-repeat scroll 80px 17px rgba(0, 0, 0, 0);
+         background: url("images/view-btn-arrow2.png") no-repeat scroll 80px 17px rgba(0, 0, 0, 0);
      }
      .btns li.hq a span{
          padding: 0 25px 2px 10px;
-         background: url("../images/view-btn-arrow2.png") no-repeat scroll 45px 17px rgba(0, 0, 0, 0);
+         background: url("images/view-btn-arrow2.png") no-repeat scroll 45px 17px rgba(0, 0, 0, 0);
      }
      .btns li.job-fit span, .btns li.view-ads span{padding: 0 20px 5px 10px;}
      
@@ -2047,7 +2149,7 @@
          width: 240px;
      }
      .cia-maps{
-       background:url(../images/ciamapbg.jpg) no-repeat top center;
+       background:url(images/ciamapbg.jpg) no-repeat top center;
      }
      
      .cia-maps form{
@@ -2061,7 +2163,7 @@
        clear:both;
      }
      .gallery-panel{
-       background:#dddbd4 url(../images/bg-gallery.jpg) no-repeat 0 0;
+       background:#dddbd4 url(images/bg-gallery.jpg) no-repeat 0 0;
        padding:11px 0 15px;
        width:974px;
      }
@@ -2095,7 +2197,7 @@
        font-size:0.917em;
        text-transform:uppercase;
        padding:0 20px 0 0;
-        background:url(../images/ico-01.png) no-repeat 100% 0;   
+        background:url(images/ico-01.png) no-repeat 100% 0;   
        display:inline-block;
        *display: inline; *zoom: 1; /* IE7*/
        margin:0 0 17px;
@@ -2123,7 +2225,7 @@
      .gallery .read-box span{
        padding:0 28px 0 0;
        color:#fff;
-       background:url(../images/arrow-3.png) no-repeat 100% 16px;
+       background:url(images/arrow-3.png) no-repeat 100% 16px;
        float:left;
        font-weight:bold;
      }
@@ -2275,7 +2377,7 @@
  @media only screen and (min-width: 993px) {   
      #content-careers{
          width:768px;
-         background:url(../images/bg-careers.jpg) no-repeat 5px 0;
+         background:url(images/bg-careers.jpg) no-repeat 5px 0;
          padding:20px 12px 0 12px;
          margin-bottom:15px;
      }
@@ -2326,14 +2428,14 @@
                          .gallery-panel ul li div .desc-container .rss{
                              font-size: 1.125em;
                              text-transform: uppercase;
- /*							background: url("../images/ico-01.png") no-repeat scroll 100% 10% rgba(0, 0, 0, 0);   */
+ /*							background: url("images/ico-01.png") no-repeat scroll 100% 10% rgba(0, 0, 0, 0);   */
  /*							padding: 0 20px 10px 0;   */
                              padding: 0 10px 10px 0;  
                              margin: 0 0 0 10px;
                          }
                      .gallery-panel ul li p{margin: 0;}
                      .gallery-panel ul li h2{
-                         background: url('../images/home/slider-title.png') repeat 0 0 transparent;
+                         background: url('images/home/slider-title.png') repeat 0 0 transparent;
                          color: #fff;
                          font-size: 1.813em;
                          line-height: 1em;
@@ -2368,7 +2470,7 @@
      }
      .gallery-panel .flex-control-nav a, .flex-pauseplay a {
          display: block;
-         background: url("../images/btns-gallery.png") no-repeat scroll 0px -16px rgba(0, 0, 0, 0);
+         background: url("images/btns-gallery.png") no-repeat scroll 0px -16px rgba(0, 0, 0, 0);
          float: left;
          height: 10px;
          margin: 0 6px 0 0;
@@ -2441,12 +2543,12 @@
                          display:block;
                          margin: 0 5px 0 0;
                      }
-                     .icon-facebook{background: url('../images/Social_32x32_Facebook.png') no-repeat transparent;}
-                     .icon-twitter{background: url('../images/Social_32x32_Twitter.png') no-repeat transparent;}
-                     .icon-youtube{background: url('../images/Social_32x32_YouTube.png') no-repeat transparent;}
-                     .icon-flickr{background: url('../images/Social_32x32_Flickr.png') no-repeat transparent;}
-                     .icon-rss{background: url('../images/Social_32x32_RSS.png') no-repeat transparent;}
-                     .icon-email{background: url('../images/Social_32x32_ContactUs.png') no-repeat transparent;}
+                     .icon-facebook{background: url('images/Social_32x32_Facebook.png') no-repeat transparent;}
+                     .icon-twitter{background: url('images/Social_32x32_Twitter.png') no-repeat transparent;}
+                     .icon-youtube{background: url('images/Social_32x32_YouTube.png') no-repeat transparent;}
+                     .icon-flickr{background: url('images/Social_32x32_Flickr.png') no-repeat transparent;}
+                     .icon-rss{background: url('images/Social_32x32_RSS.png') no-repeat transparent;}
+                     .icon-email{background: url('images/Social_32x32_ContactUs.png') no-repeat transparent;}
                      .template-homepage_html .connect-video {
                          height: 117px;
                          width: 209px;
@@ -2486,11 +2588,11 @@
          .template-homepage_html aside.bottom-block h4{text-transform: none;}
  
      .template-homepage_html aside div section .about-wrapper{
-         background: url('../images/home/seal.png') no-repeat bottom right transparent;
+         background: url('images/home/seal.png') no-repeat bottom right transparent;
      }
  
      .template-homepage_html aside div section .kids-box{
-         background: url('../images/ava-home.png') no-repeat bottom left transparent;
+         background: url('images/ava-home.png') no-repeat bottom left transparent;
          padding: 5px 0 0 95px;
          height: 173px;
      }
@@ -2566,7 +2668,7 @@
          padding-top:2px;
          padding-left:15px;
          float: left;
-         background:White url(../images/smallBGKidsGames.jpg) no-repeat 0 0;
+         background:White url(images/smallBGKidsGames.jpg) no-repeat 0 0;
          margin-top:2px;
      }
      #visHeadContainer-kids + p {
@@ -2579,7 +2681,7 @@
      margin:0px; 
      list-style-type: none; list-style-image:none;
      width:216px; height:300px;
-     /*background:White url(../images/rtNavBGKidsGames.jpg) no-repeat top left;*/
+     /*background:White url(images/rtNavBGKidsGames.jpg) no-repeat top left;*/
      width:230px;
  }
  
@@ -2597,15 +2699,15 @@
      width:178px; height:26px; 
      margin: 0px 0px 8px 0px;
      padding:0;
-     background-color:#FF0000;
-     background:#631818 url(../images/rtNavItemBGKids.gif) no-repeat top left;
+     background-color:#FFFFFF;
+     background:#631818 url(images/rtNavItemBGKids.gif) no-repeat top left;
  }
  
  #visHeadNav li a {
      display:block;
      width:142px; height:100%; 
      margin: 0; padding:0px 0px 0px 36px;
-     background:#631818 url(../images/rtNavItemBGKids.gif) no-repeat top left;
+     background:#631818 url(images/rtNavItemBGKids.gif) no-repeat top left;
      font:12px Arial;
      color:#FFFFFF;
      text-decoration:none;
@@ -2622,39 +2724,39 @@
      line-height:26px;
  }
      #visHeadNav li.gamesLink-world, #visHeadNav li.gamesLink-world a {
-     background-image: url(../images/rtNavItemBGKids_world.gif);
+     background-image: url(images/rtNavItemBGKids_world.gif);
      }
  
      #visHeadNav li.gamesLink-code, #visHeadNav li.gamesLink-code a {
-         background-image: url(../images/rtNavItemBGKids_code.gif);
+         background-image: url(images/rtNavItemBGKids_code.gif);
      }
  
      #visHeadNav li.gamesLink-scram, #visHeadNav li.gamesLink-scram a {
-         background-image: url(../images/rtNavItemBGKids_scam.gif);
+         background-image: url(images/rtNavItemBGKids_scam.gif);
      }
  
      #visHeadNav li.gamesLink-seal, #visHeadNav li.gamesLink-seal a {
-         background-image: url(../images/rtNavItemBGKids_scam.gif);
+         background-image: url(images/rtNavItemBGKids_scam.gif);
      }
  
      #visHeadNav li.gamesLink-word, #visHeadNav li.gamesLink-word a {
-         background-image: url(../images/rtNavItemBGKids_word.gif);
+         background-image: url(images/rtNavItemBGKids_word.gif);
      }
  
      #visHeadNav li.gamesLink-memory, #visHeadNav li.gamesLink-memory a {
-         background-image: url(../images/rtNavItemBGKids_concentration.gif);
+         background-image: url(images/rtNavItemBGKids_concentration.gif);
      }
  
      #visHeadNav li.gamesLink-color, #visHeadNav li.gamesLink-color a {
-         background-image: url(../images/rtNavItemBGKids_coloringbook.gif);
+         background-image: url(images/rtNavItemBGKids_coloringbook.gif);
      }
  
      #visHeadNav li.gamesLink-arial, #visHeadNav li.gamesLink-arial a {
-         background-image: url(../images/rtNavItemBGKids_arial.gif);
+         background-image: url(images/rtNavItemBGKids_arial.gif);
      }
  
      #visHeadNav li.gamesLink-photo, #visHeadNav li.gamesLink-photo a {
-         background-image: url(../images/rtNavItemBGKids_photo.gif);
+         background-image: url(images/rtNavItemBGKids_photo.gif);
      }
      /*end  */
      

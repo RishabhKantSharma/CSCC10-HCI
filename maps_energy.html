@@ -1518,7 +1518,7 @@
         Western Europe
       </div>
       <div class="map_field">
-        Population (1 = 100 million people)
+        Energy Consumption (1 = 100 billion kiloWatts)
       </div>
     </div>
 
@@ -1535,7 +1535,7 @@
            
                  function drawMarkersMap() {
                 
-                 var country_links = {'France':'https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html',
+                  var country_links = {'France':'https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html',
                   'Germany': 'https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html',
                   'Austria': 'https://www.cia.gov/library/publications/the-world-factbook/geos/au.html',
                   'Belgium': 'https://www.cia.gov/library/publications/the-world-factbook/geos/be.html',
@@ -1546,24 +1546,24 @@
                   'Netherlands': 'https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html'};
            
                  var data = google.visualization.arrayToDataTable([
-                   ['Country',   'Population'],
-                   ['France',  35],
-                   ['Germany', 25],
-                   ['Austria', 10],
-                   ['Belgium', 21],
-                   ['Switzerland', 5],
+                   ['Country',   'Energy Consumption'],
+                   ['France', 52],
+                   ['Germany', 90],
+                   ['Austria', 40],
+                   ['Belgium', 43],
+                   ['Switzerland', 21],
                    ['German Democratic Republic', 15],
                    ['France, Metropolitan', 38],
                    ['Liechtenstein', 5],
-                   ['Luxembourg', 13],
+                   ['Luxembourg', 66],
                    ['Monaco', 15],
-                   ['Netherlands', 19]
+                   ['Netherlands', 27]
                  ]);
            
                  var options = {
                     region: '155',
                     sizeAxis: { minValue: 0, maxValue: 100 },
-                    colorAxis: {colors: ['#dbfff0', '#89fad1', '#007264', '#005449']},
+                    colorAxis: {colors: ['#fff5db', '#fae389', '#c39728', '#ac7800']},
                     backgroundColor: '#81d4fa',
                     datalessRegionColor: 'white',
                     defaultColor: '#f5f5f5',
@@ -1592,14 +1592,14 @@
     </div>
 
     <div class='map_nav'>
-      <div class='map_btn' id='curr_map'>
-        <a title="Currently on the Population page for Western Europe map">Population</a>
+      <div class='map_btn'>
+        <a href="maps.html" title="Population page for Western Europe map">Population</a>
       </div>
       <div class='map_btn'>
         <a href="maps_GDP.html" title="GDP page for Western Europe map">GDP</a>
       </div>
-      <div class='map_btn'>
-        <a href="maps_energy.html" title="Energy Consumption page for Western Europe map">Energy Consumption</a>
+      <div class='map_btn' id='curr_map'>
+        <a title="Currently on the Energy Consumption page for Western Europe map">Energy Consumption</a>
       </div>
       <div class='map_btn'>
         <a href="maps_airports.html" title="Airports page for Western Europe map">Airports</a>
@@ -1873,8 +1873,8 @@
    <div class="modal-content">
     <div class="modal-body">
       <div class="section-contact-cia main-block-popup">
-        <!-- <button aria-hidden="true" aria-label="Close" class="cfclose" data-dismiss="modal" type="button">&#215;</button><br> -->
-        <!-- <div id="mainContact">
+        <!-- <button aria-hidden="true" aria-label="Close" class="cfclose" data-dismiss="modal" type="button">&#215;</button><br>
+        <div id="mainContact">
           <div class="section-contact-cia cf-heading-panel" style="width:93%">
             <h1>Contact CIA</h1>
           </div>

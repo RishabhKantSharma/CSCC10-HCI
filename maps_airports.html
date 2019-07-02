@@ -513,7 +513,7 @@
                <nav class="sidebar-nav" role='navigation' aria-label='sidebar library navigation'>
                  <h2 class="visuallyhidden">Secondary Navigation</h2>
                  <ul>
-                   <li><a class="active" href="/library/" >Library</a></li>
+                   <li><a class="active" href="/library/">Library</a></li>
                    <li>
                      <a href="/library/publications/" style='font-weight:bold'>Publications</a>
                      <ul>
@@ -521,8 +521,8 @@
                          <a class="active"
                            href="/library/publications/resources/the-world-factbook/" >The World Factbook</a>
                        </li>
-                       <li><a href="/library/publications/resources/world-leaders-1/" >World Leaders</a></li>
-                       <li><a href="/library/publications/resources/cia-maps-publications/" >CIA Maps</a></li>
+                       <li><a href="/library/publications/resources/world-leaders-1/">World Leaders</a></li>
+                       <li><a href="/library/publications/resources/cia-maps-publications/">CIA Maps</a></li>
                      </ul>
                    </li>
         <li><a id="test1" href="/library/center-for-the-study-of-intelligence/">Center for the Study of Intelligence</a>
@@ -1428,7 +1428,7 @@
             </a>
         </li>
         <li style="border-bottom: 2px solid #CCCCCC; ">
-          <a href="javascript:void(0);" title="About" >ABOUT</a>
+          <a href="javascript:void(0);" title="About">ABOUT</a>
           <ul class="sub_menu">
               <li><a href="../docs/history.html">History</a></li>
               <li><a href="../docs/contributor_copyright.html">Copyright and Contributors</a></li>
@@ -1438,7 +1438,7 @@
           </ul>
         </li>
         <li style="border-bottom: 2px solid #CCCCCC; ">
-          <a href="javascript:void(0);" title="References" >REFERENCES</a>
+          <a href="javascript:void(0);" title="References">REFERENCES</a>
           <ul class="sub_menu">
               <li><a href="../docs/refmaps.html">Regional and World Maps</a></li>
               <li><a href="../docs/flagsoftheworld.html">Flags of the World</a></li>
@@ -1449,7 +1449,7 @@
           </ul>
         </li>
         <li style="border-bottom: 2px solid #CCCCCC; ">
-          <a href="javascript:void(0);" title="Appendices" >APPENDICES</a>
+          <a href="javascript:void(0);" title="Appendices">APPENDICES</a>
           <ul class="sub_menu">
                 <li><a href="../appendix/appendix-a.html">A: Abbreviations</a></li>
                 <li><a href="../appendix/appendix-b.html">B: International Organizations and Groups</a></li>
@@ -1462,13 +1462,13 @@
           </ul>
         </li>
         <li id="faqs" style="border-bottom: 2px solid #CCCCCC; ">
-            <a href="../docs/faqs.html" >FAQ<span style="text-transform:lowercase; ">s</span></a>
+            <a href="../docs/faqs.html">FAQ<span style="text-transform:lowercase; ">s</span></a>
         </li>
         <li id="contact" style="border-bottom: 2px solid #CCCCCC; ">
-          <a title="Contact" class="landingTrigger" data-toggle="modal" data-target="#popupContactModal" >CONTACT</a>
+          <a title="Contact" class="landingTrigger" data-toggle="modal" data-target="#popupContactModal">CONTACT</a>
         </li>
         <li id="archive">
-          <a href="/library/publications/download" title="The World Factbook Archive" >THE WORLD FACTBOOK ARCHIVE</a>
+          <a href="/library/publications/download" title="The World Factbook Archive">THE WORLD FACTBOOK ARCHIVE</a>
         </li>
       </ul>  <!--  wfbNav  -->
 
@@ -1518,7 +1518,7 @@
         Western Europe
       </div>
       <div class="map_field">
-        Population (1 = 100 million people)
+        Airports
       </div>
     </div>
 
@@ -1535,7 +1535,7 @@
            
                  function drawMarkersMap() {
                 
-                 var country_links = {'France':'https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html',
+                  var country_links = {'France':'https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html',
                   'Germany': 'https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html',
                   'Austria': 'https://www.cia.gov/library/publications/the-world-factbook/geos/au.html',
                   'Belgium': 'https://www.cia.gov/library/publications/the-world-factbook/geos/be.html',
@@ -1546,24 +1546,24 @@
                   'Netherlands': 'https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html'};
            
                  var data = google.visualization.arrayToDataTable([
-                   ['Country',   'Population'],
-                   ['France',  35],
-                   ['Germany', 25],
-                   ['Austria', 10],
-                   ['Belgium', 21],
-                   ['Switzerland', 5],
-                   ['German Democratic Republic', 15],
-                   ['France, Metropolitan', 38],
-                   ['Liechtenstein', 5],
-                   ['Luxembourg', 13],
-                   ['Monaco', 15],
-                   ['Netherlands', 19]
+                   ['Country',   'Number of Airports'],
+                   ['France',  464],
+                   ['Germany', 539],
+                   ['Austria', 52],
+                   ['Belgium', 41],
+                   ['Switzerland', 63],
+                   ['German Democratic Republic', 0],
+                   ['France, Metropolitan', 0],
+                   ['Liechtenstein', 0],
+                   ['Luxembourg', 2],
+                   ['Monaco', 0],
+                   ['Netherlands', 29]
                  ]);
-           
+
                  var options = {
                     region: '155',
                     sizeAxis: { minValue: 0, maxValue: 100 },
-                    colorAxis: {colors: ['#dbfff0', '#89fad1', '#007264', '#005449']},
+                    colorAxis: {colors: ['#9ca9fd', '#3445b0', '#3445b0', '#272c4c']},
                     backgroundColor: '#81d4fa',
                     datalessRegionColor: 'white',
                     defaultColor: '#f5f5f5',
@@ -1592,8 +1592,8 @@
     </div>
 
     <div class='map_nav'>
-      <div class='map_btn' id='curr_map'>
-        <a title="Currently on the Population page for Western Europe map">Population</a>
+      <div class='map_btn'>
+        <a href="maps.html" title="Population page for Western Europe map">Population</a>
       </div>
       <div class='map_btn'>
         <a href="maps_GDP.html" title="GDP page for Western Europe map">GDP</a>
@@ -1601,8 +1601,8 @@
       <div class='map_btn'>
         <a href="maps_energy.html" title="Energy Consumption page for Western Europe map">Energy Consumption</a>
       </div>
-      <div class='map_btn'>
-        <a href="maps_airports.html" title="Airports page for Western Europe map">Airports</a>
+      <div class='map_btn' id='curr_map'>
+        <a title="Currently on the Airports page for Western Europe map">Airports</a>
       </div>
     </div>  
 
@@ -1873,8 +1873,8 @@
    <div class="modal-content">
     <div class="modal-body">
       <div class="section-contact-cia main-block-popup">
-        <!-- <button aria-hidden="true" aria-label="Close" class="cfclose" data-dismiss="modal" type="button">&#215;</button><br> -->
-        <!-- <div id="mainContact">
+        <!-- <button aria-hidden="true" aria-label="Close" class="cfclose" data-dismiss="modal" type="button">&#215;</button><br>
+        <div id="mainContact">
           <div class="section-contact-cia cf-heading-panel" style="width:93%">
             <h1>Contact CIA</h1>
           </div>
@@ -2013,10 +2013,10 @@
     </div>
    </div>
   </div>
-</div> -->
+</div>
 
 
-  <!-- <div aria-hidden="true" aria-labelledby="mainReport" class="modal fade" id="popupReportModal" role="dialog" style="z-index:2147483647;overflow:auto" tabindex="-1">
+  <div aria-hidden="true" aria-labelledby="mainReport" class="modal fade" id="popupReportModal" role="dialog" style="z-index:2147483647;overflow:auto" tabindex="-1">
   <div class="modal-dialog">
    <div class="modal-content">
     <div class="modal-body">
