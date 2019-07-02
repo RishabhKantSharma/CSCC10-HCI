@@ -1536,7 +1536,9 @@
            
                  function drawMarkersMap() {
                 
-                 var country_links = {'France':'https://www.google.ca'}; // TO-DO: Add the actual links
+                 var country_links = {'France':'https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html',
+                  'Germany': 'https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html'};
+                  // TO-DO: Add the actual links
            
                  var data = google.visualization.arrayToDataTable([
                    ['Country',   'Population'],
@@ -1583,6 +1585,22 @@
              </div>
       </div>
     </div>
+
+    <div class='map_nav'>
+      <div class='map_btn' id='curr_map'>
+        <a>Population</a>
+      </div>
+      <div class='map_btn'>
+        <a href="/maps_GDP.html">GDP</a>
+      </div>
+      <div class='map_btn'>
+        <a href="/maps_energy.html">Energy Consumption</a>
+      </div>
+      <div class='map_btn'>
+        <a href="/maps_airports.html">Airports</a>
+      </div>
+    </div>  
+
   <div style='clear:both'></div>
 </div>
 

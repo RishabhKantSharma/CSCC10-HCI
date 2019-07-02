@@ -17,6 +17,50 @@
   background-color: #FFFFFF;
 }
 
+/* Map navigation button style */
+
+.map_nav {
+  display: flex;
+  direction: column;
+  margin: 20px;
+}
+
+.map_nav a {
+  padding: 10px 10px 10px 10px;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  background-color: #dbd8d1;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.map_nav a :visited {
+  text-decoration: none;
+}
+
+.map_btn :hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.map_btn :active {
+  background-color: #cccccc;
+  color: black;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+#curr_map a {
+  color: #1e3762 !important;
+  background-color: white;
+  cursor: context-menu;
+}
+
 /* Google GeoChart style */
 .google-visualization-tooltip {
   border:none !important;
