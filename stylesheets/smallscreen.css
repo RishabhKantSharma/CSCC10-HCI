@@ -1501,7 +1501,7 @@
    color:"white"
  }
 
-  #test1 {color: #FFFFFF}
+  /* #test1 {color: #FFFFFF}
   #test2 {color: #FFFFFF}
   #test3 {color: #FFFFFF}
   #test4 {color: #FFFFFF}
@@ -1512,7 +1512,21 @@
   #publications_text {color: #FFFFFF}
   #home_text {color: #FFFFFF}
   #world_factbook_text {color: #FFFFFF}
-  #FAQ_text {color:#FFFFFF}
+  #FAQ_text {color:#FFFFFF} */
+
+  .reference_content {
+    background-color: white;
+  }
+
+  /* .sidebar-nav {
+    background-color : #455D87;
+  } */
+
+  #main {
+    background-color: whitesmoke;
+  }
+
+
 
  .download-panel .heading-block .select-publication{
    float:none;
