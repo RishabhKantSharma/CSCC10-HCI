@@ -1326,6 +1326,29 @@
     background:#4d4d4d;
     color:#fff;
   }
+
+  .gdpHover:hover + .gdpHoverResult{
+    color: #4b4b4b;
+    display: block;
+
+  }
+
+  .gdpHoverResult{
+    display: none;
+    color: #FFFFFF;
+  }
+
+  .gnpHover:hover + .gnpHoverResult{
+    color: #4b4b4b;
+    display: block;
+
+  }
+
+  .gnpHoverResult{
+    display: none;
+    color: #FFFFFF;
+  }
+
   .lang-list{
     margin:0;
     padding:10px 3px 0 0;
